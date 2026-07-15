@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "cors": "2.8.6",
+    "express": "5.2.1",
+    "nodemon": "3.1.14",
+    "zod": "4.4.3"
+  },
+  "scripts": {
+    "dev": "nodemon ./back/server/server.js"
+  },
+  "type": "module"
+}

@@ -1,0 +1,692 @@
+[
+    {
+        "id": 1,
+        "nombre": "Conjunto Formal",
+        "precio": "250",
+        "inventario": "2",
+        "descripcion": "Conjunto formal color negro, tela algodon.",
+        "colores": "Negro, Azul",
+        "categoria": "Pantalones",
+        "tallas": "M"
+    },
+    {
+        "id": 2,
+        "nombre": "Conjunto sin mangas",
+        "precio": "250",
+        "inventario": "2",
+        "descripcion": "Conjunto de dos piezas tela algodon.",
+        "colores": "Rosa/Blanco, Cafe/Blanco",
+        "tipo": "Pantalones",
+        "tallas": "M"
+    },
+    {
+        "id": 3,
+        "nombre": "Conjunto deportivo",
+        "precio": "250",
+        "inventario": "2",
+        "descripcion": "Conjunto deportivo tela algodon, pans y saco tipo crop.Conjunto deportivo tela algodon, pans y saco tipo crop.Conjunto deportivo tela algodon, pans y saco tipo crop.Conjunto deportivo tela algodon, pans y saco tipo crop.",
+        "colores": "Negro, Rosa",
+        "tipo": "Pantalones",
+        "tallas": "Unitalla"
+    },
+    {
+        "id": 4,
+        "nombre": "Jogger hombre",
+        "precio": "150",
+        "inventario": "2",
+        "descripcion": "Jogger/pants para hombre, cuenta con diseño de camuflaje en la parte inferior de la rodilla.\nUn modelo muy comodo y de tela refrescante.",
+        "colores": "Gris, Negro",
+        "tipo": "Pantalones",
+        "tallas": "Unitalla"
+    },
+    {
+        "id": 5,
+        "nombre": "Conjunto interior Basico",
+        "precio": "150",
+        "inventario": "6",
+        "descripcion": "Cunjunto de lenceria Basico de dos piezas, cuenta con tanga y brasier de tipo encaje.",
+        "colores": "Blanco, Gris, Azul, Negro, Morado claro, Rojo",
+        "tipo": "Lenceria",
+        "tallas": "C, M, G"
+    },
+    {
+        "id": 6,
+        "nombre": "Corset Victoria Secret",
+        "precio": "200",
+        "inventario": "3",
+        "descripcion": "Corset de satin Victoria Secret.",
+        "colores": "Blanco, Negro, Rojo",
+        "tipo": "Lenceria",
+        "tallas": "C, M, G"
+    },
+    {
+        "id": 7,
+        "nombre": "Corset de flores",
+        "precio": "200",
+        "inventario": "1",
+        "descripcion": "Corset en color tinto con decoracion de flores.",
+        "colores": "Tinto",
+        "tipo": "Lenceria",
+        "tallas": "C, M"
+    },
+    {
+        "id": 8,
+        "nombre": "Corset de Encaje",
+        "precio": "200",
+        "inventario": "2",
+        "descripcion": "Corset con mangas, tela tipo enaje ajustable.",
+        "colores": "Blanco, Rojo",
+        "tipo": "Lenceria",
+        "tallas": "C, M"
+    },
+    {
+        "id": 9,
+        "nombre": "Conjunto Mariposa",
+        "precio": "200",
+        "inventario": "2",
+        "descripcion": "Conjunto de lenceria Mariposa , tela de encaje con estampado de besos, cuenta con collar de mariposa.\n",
+        "colores": "Rosa, Azul",
+        "tipo": "Lenceria",
+        "tallas": "C, M, G"
+    },
+    {
+        "id": 10,
+        "nombre": "Conjunto Besos",
+        "precio": "200",
+        "inventario": "2",
+        "descripcion": "Conjunto de lenceria Besos, tela de encaje con estampado de besos, cuenta con collar de mariposa.",
+        "colores": "Blanco, Negro",
+        "tipo": "Lenceria",
+        "tallas": "C, M, G"
+    },
+    {
+        "id": 11,
+        "nombre": "Conjunto Perla",
+        "precio": "200",
+        "inventario": "3",
+        "descripcion": "Conjunto Perla, cuenta con collar y colgante de perlas de decoración, tela tipo encaje con estampado de besos, ",
+        "colores": "Azul, Blanco, Negro",
+        "tipo": "Lenceria",
+        "tallas": "M, G"
+    },
+    {
+        "id": 12,
+        "nombre": "Oversize GTR Skyline",
+        "precio": "160",
+        "inventario": "2",
+        "descripcion": "Playera oversize con estampado de por delante y por espalda con diseño del auto de carreras GTR SKYLINE en color azu.",
+        "colores": "Negro",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 13,
+        "nombre": "Oversize Supra",
+        "precio": "160",
+        "inventario": "2",
+        "descripcion": "Playera oversize con estampado de por delante y por espalda con diseño del carro de carreras Toyota Supra en color naranja y una leyenda grabada.",
+        "colores": "Negro",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 14,
+        "nombre": "Oversize Corazón",
+        "precio": "150",
+        "inventario": "2",
+        "descripcion": "Plyera oversize con estampado de corazon flechado en color rosa por la parte delantera. ",
+        "colores": "Blanco",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 15,
+        "nombre": "Oversize McQueen",
+        "precio": "160",
+        "inventario": "2",
+        "descripcion": "Playera oversize con estampado de por delante y por espalda con diseño del Rayo McQueen en color naranja/rojo.",
+        "colores": "Negro",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 16,
+        "nombre": "Oversize Adventure",
+        "precio": "150",
+        "inventario": "1",
+        "descripcion": "Playera Oversize en color negro con estampado de juvenil de un auto en la puesta de sol con la leyenda Adventure, todo en na paleta de colores rosa.",
+        "colores": "Negro",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 17,
+        "nombre": "Oversize Nata Montana",
+        "precio": "160",
+        "inventario": "2",
+        "descripcion": "Playera oversize Montana en color negro, cuenta con la leyenda de Nata Montana en la parte superior izquierda, además de un estampado de Tony Monta en el aterdeecer de la playa el cual tambien cuenta con la leyenda de Nata Montana con una letra de mayor tamaño.",
+        "colores": "Negro",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 18,
+        "nombre": "Oversize Cherry",
+        "precio": "150",
+        "inventario": "2",
+        "descripcion": "Playera oversize Cherry en color blanco, cuenta con estampado Cherry de moda. ",
+        "colores": "Blanco",
+        "tipo": "Camisas",
+        "tallas": "2"
+    },
+    {
+        "id": 19,
+        "nombre": "Oversize Strawberry",
+        "precio": "150",
+        "inventario": "2",
+        "descripcion": "Playera oversize Strawberry en color blanco, cuenta con el estampado de moda Strawberry en la parte delantera.",
+        "colores": "Blanco",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 20,
+        "nombre": "Oversize Cherries",
+        "precio": "1510",
+        "inventario": "2",
+        "descripcion": "Playera oversize Cherries en color Negro, cuenta con estampado Cherries de moda.",
+        "colores": "Negro",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 21,
+        "nombre": "Oversize GloboGlow",
+        "precio": "150",
+        "inventario": "1",
+        "descripcion": "Playera oversize GloboGlow en color blanco, cuenta con estampado de un globo brillante en forma de perro.\n ",
+        "colores": "Blanco",
+        "tipo": "Camisas",
+        "tallas": "Overize"
+    },
+    {
+        "id": 22,
+        "nombre": "Oversize Porshe",
+        "precio": "160",
+        "inventario": "2",
+        "descripcion": "Playera oversize Porshe, estampado de por delante y por espalda con diseño del carro de carreras Porshe en color Azul/Rosa con leyenda grabada.",
+        "colores": "Negro",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 23,
+        "nombre": "Oversize Madonna",
+        "precio": "160",
+        "inventario": "2",
+        "descripcion": "Playera oversize Madonna en color negro, cuenta con estampado en color Rosa por ambos lados, en la parte de atras cuenta con un bolso y la inscripcion de Madonna. ",
+        "colores": "Negro",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 24,
+        "nombre": "Oversize Mustang",
+        "precio": "160",
+        "inventario": "2",
+        "descripcion": "Playera oversize con estampado de por delante y por espalda con diseño del carro de carreras Mustang Ford en color Azul y una leyenda grabada.",
+        "colores": "Negro",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 25,
+        "nombre": "Oversize L A",
+        "precio": "150",
+        "inventario": "2",
+        "descripcion": "Playera Oversize Los Angeles, playera con grabado.",
+        "colores": "Rossa, Negro",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 26,
+        "nombre": "Oversize Labubu",
+        "precio": "150",
+        "inventario": "1",
+        "descripcion": "Playera Oversize Labubu, playera en coloblanco con estampado.",
+        "colores": "Blanco",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 27,
+        "nombre": "Oversize Estrellas",
+        "precio": "150",
+        "inventario": "1",
+        "descripcion": "Playera Oversize Estrellas, playera color Blanco con estampado.",
+        "colores": "Blanco",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 28,
+        "nombre": "Oversize Change",
+        "precio": "150",
+        "inventario": "1",
+        "descripcion": "Playera Oversize Change, playera color blanco con estampado.",
+        "colores": "Blanco",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 29,
+        "nombre": "Oversize Beautiful",
+        "precio": "150",
+        "inventario": "1",
+        "descripcion": "Playera Oversize Beautiful, playera color blanco estampado.",
+        "colores": "Blanco",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 30,
+        "nombre": "Oversize SpyderGirl",
+        "precio": "160",
+        "inventario": "1",
+        "descripcion": "Playera Oversize SpyderGirl, Playera color blanco con estampado.",
+        "colores": "Blanco",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 31,
+        "nombre": "Oversize Ferrari",
+        "precio": "160",
+        "inventario": "2",
+        "descripcion": "Playera oversize con estampado de por delante y por espalda con diseño del carro de carreras Ferrari en color rojo y una leyenda grabada.",
+        "colores": "Negro",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 32,
+        "nombre": "Oversize Watermelon",
+        "precio": "150",
+        "inventario": "1",
+        "descripcion": "Playera Oversize Watermelon, playyera color blanco con estampado.",
+        "colores": "Blanco",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 33,
+        "nombre": "Oversize BobyGirl",
+        "precio": "150",
+        "inventario": "1",
+        "descripcion": "Playera Oversize BobyGirl, playera color negro con estampado.",
+        "colores": "Negro",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 34,
+        "nombre": "Oversize SpyderBoy",
+        "precio": "160",
+        "inventario": "1",
+        "descripcion": "Plyera Oversize SpyderBoy, plkayera color blanco con estampado.",
+        "colores": "Blanco",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 35,
+        "nombre": "Oversize Chopper",
+        "precio": "160",
+        "inventario": "1",
+        "descripcion": "Oversize Chopper",
+        "colores": "Negro",
+        "tipo": "Camisas",
+        "tallas": "Oversize"
+    },
+    {
+        "id": 36,
+        "nombre": "Pantalon Campana mezclilla",
+        "precio": "320",
+        "inventario": "2",
+        "descripcion": "Pantalon Campana mezclilla",
+        "colores": "Azul marino",
+        "tipo": "Pantalones",
+        "tallas": "15"
+    },
+    {
+        "id": 37,
+        "nombre": "Pantalon Campana",
+        "precio": "320",
+        "inventario": "2",
+        "descripcion": "Pantalon mezclilla campana",
+        "colores": "Azul claro",
+        "tipo": "Pantalones",
+        "tallas": "15"
+    },
+    {
+        "id": 38,
+        "nombre": "Pantalon Cargo Negro",
+        "precio": "370",
+        "inventario": "3",
+        "descripcion": "Pantalon Cargo Negro",
+        "colores": "Negro",
+        "tipo": "Pantalones",
+        "tallas": "S-L"
+    },
+    {
+        "id": 39,
+        "nombre": "Pantalon Cargo Mezclilla",
+        "precio": "340",
+        "inventario": "3",
+        "descripcion": "Pantalon Cargo Mezclilla",
+        "colores": "Mezclilla",
+        "tipo": "Pantalones",
+        "tallas": "15-21"
+    },
+    {
+        "id": 40,
+        "nombre": "Pantalon Cargo Bolsas a los Lados",
+        "precio": "320",
+        "inventario": "3",
+        "descripcion": "Pantalon Cargo Bolsas a los Lados ",
+        "colores": "Mezclilla claro",
+        "tipo": "Pantalones",
+        "tallas": "11-15"
+    },
+    {
+        "id": 41,
+        "nombre": "Pantalon Cargo colgantes",
+        "precio": "340",
+        "inventario": "2",
+        "descripcion": "Pantalon Cargo colgantes",
+        "colores": "Negro",
+        "tipo": "Pantalones",
+        "tallas": "11"
+    },
+    {
+        "id": 42,
+        "nombre": "Pantalon Cargo Oscuro",
+        "precio": "340",
+        "inventario": "3",
+        "descripcion": "Pantalon Cargo Oscuro",
+        "colores": "Azul mezclilla oscuro",
+        "tipo": "Pantalones",
+        "tallas": "15-21"
+    },
+    {
+        "id": 43,
+        "nombre": "Pantalon Cargo Bolsa Alta",
+        "precio": "340",
+        "inventario": "2",
+        "descripcion": "Pantalon Cargo Bolsa Alta",
+        "colores": "Mezclilla",
+        "tipo": "Pantalones",
+        "tallas": "11"
+    },
+    {
+        "id": 44,
+        "nombre": "Pantalon Cargo Tirantes",
+        "precio": "350",
+        "inventario": "2",
+        "descripcion": "Pantalon Cargo Tirantes",
+        "colores": "Mezclilla",
+        "tipo": "Pantalones",
+        "tallas": "15-21"
+    },
+    {
+        "id": 45,
+        "nombre": "Pantalon con Rayas",
+        "precio": "320",
+        "inventario": "3",
+        "descripcion": "Pantalon holgado con rayas blancas a los costados.",
+        "colores": "Azul Oscuro",
+        "tipo": "Pantalones",
+        "tallas": "7-15"
+    },
+    {
+        "id": 47,
+        "nombre": "Pantalon Skinny gris oscuro",
+        "precio": "340",
+        "inventario": "3",
+        "descripcion": "Pantalon Skinny gris oscuro",
+        "colores": "Gris Ocuro",
+        "tipo": "Pantalones",
+        "tallas": "7-15"
+    },
+    {
+        "id": 48,
+        "nombre": "Pantalon cargo tirantes",
+        "precio": "320",
+        "inventario": "3",
+        "descripcion": "Pantalon cargo tirantes",
+        "colores": "Azul Mezclilla",
+        "tipo": "Pantalones",
+        "tallas": "2-15"
+    },
+    {
+        "id": 49,
+        "nombre": "Pantalon de vestir Holgado",
+        "precio": "350",
+        "inventario": "2",
+        "descripcion": "Pantalon de vestir Holgado ",
+        "colores": "Negro, Rosa",
+        "tipo": "Pantalones",
+        "tallas": "S-XL"
+    },
+    {
+        "id": 50,
+        "nombre": "Pantalon Holgado",
+        "precio": "320",
+        "inventario": "2",
+        "descripcion": "Pantalon Holgado",
+        "colores": "Mezclilla",
+        "tipo": "Pantalones",
+        "tallas": "15"
+    },
+    {
+        "id": 51,
+        "nombre": "Pantalon Holgado Oscuro",
+        "precio": "320",
+        "inventario": "2",
+        "descripcion": "Pantalon Holgado Oscuro",
+        "colores": "Azul Oscuro",
+        "tipo": "Pantalones",
+        "tallas": "2-15"
+    },
+    {
+        "id": 52,
+        "nombre": "Pantalon Holgado Negro",
+        "precio": "320",
+        "inventario": "2",
+        "descripcion": "Pantalon Holgado Negro",
+        "colores": "Negro",
+        "tipo": "Pantalones",
+        "tallas": "9-11"
+    },
+    {
+        "id": 53,
+        "nombre": "Pantalon Holgado mezclilla opaco",
+        "precio": "320",
+        "inventario": "2",
+        "descripcion": "Pantalon Holgado mezclilla opaco.",
+        "colores": "Mezclilla claro",
+        "tipo": "Pantalones",
+        "tallas": "15"
+    },
+    {
+        "id": 54,
+        "nombre": "Pantalon Skinny",
+        "precio": "240",
+        "inventario": "3",
+        "descripcion": "Pantalon Skinny",
+        "colores": "Mezclilla",
+        "tipo": "Pantalones",
+        "tallas": "3-21"
+    },
+    {
+        "id": 55,
+        "nombre": "Pantalon Skinny Gris",
+        "precio": "240",
+        "inventario": "3",
+        "descripcion": "Pantalon Skinny Gris",
+        "colores": "Gris",
+        "tipo": "Pantalones",
+        "tallas": "5-13"
+    },
+    {
+        "id": 56,
+        "nombre": "Pantalon Push Up",
+        "precio": "240",
+        "inventario": "3",
+        "descripcion": "Pantalon Skinny Push Up",
+        "colores": "Azul Mezclilla",
+        "tipo": "Pantalones",
+        "tallas": "7-21"
+    },
+    {
+        "id": 57,
+        "nombre": "Pantalon Mom Estampado",
+        "precio": "350",
+        "inventario": "1",
+        "descripcion": "Pantalon Mom Estampado",
+        "colores": "Azul Mezclilla",
+        "tipo": "Pantalones",
+        "tallas": "13-15"
+    },
+    {
+        "id": 58,
+        "nombre": "Paquete N1",
+        "precio": "120",
+        "inventario": "1",
+        "descripcion": "Paquete N1",
+        "colores": "Lila, Morado, Negro",
+        "tipo": "Blusas",
+        "tallas": "S-L"
+    },
+    {
+        "id": 59,
+        "nombre": "Paquete N2",
+        "precio": "120",
+        "inventario": "2",
+        "descripcion": "Paquete N2",
+        "colores": "Naranja, Blanco, Verde",
+        "tipo": "Blusas",
+        "tallas": "S-L"
+    },
+    {
+        "id": 60,
+        "nombre": "Paquete N3",
+        "precio": "120",
+        "inventario": "1",
+        "descripcion": "Paquete N3",
+        "colores": "Naranja, Rosa, Blanco",
+        "tipo": "Blusas",
+        "tallas": "S-L"
+    },
+    {
+        "id": 61,
+        "nombre": "Paquete N5",
+        "precio": "120",
+        "inventario": "1",
+        "descripcion": "Paquete N5",
+        "colores": "Verde, Rosa, Naranja.",
+        "tipo": "Blusas",
+        "tallas": "S-M"
+    },
+    {
+        "id": 62,
+        "nombre": "Paquete N6",
+        "precio": "120",
+        "inventario": "1",
+        "descripcion": "Paquete N6",
+        "colores": "Verde, Naranja",
+        "tipo": "Blusas",
+        "tallas": "S-L"
+    },
+    {
+        "id": 63,
+        "nombre": "Paquete N8",
+        "precio": "120",
+        "inventario": "1",
+        "descripcion": "Paquete N8",
+        "colores": "Verde, Naranja, Lila",
+        "tipo": "Blusas",
+        "tallas": "S-L"
+    },
+    {
+        "id": 64,
+        "nombre": "Paquete N9",
+        "precio": "120",
+        "inventario": "1",
+        "descripcion": "Paquete N9",
+        "colores": "Lila, Morado, Tinto",
+        "tipo": "Blusas",
+        "tallas": "S-M"
+    },
+    {
+        "id": 65,
+        "nombre": "Paquete N10",
+        "precio": "120",
+        "inventario": "1",
+        "descripcion": "Paquete N10",
+        "colores": "Blanco, Rosa, Lila",
+        "tipo": "Blusas",
+        "tallas": "S-M"
+    },
+    {
+        "id": 66,
+        "nombre": "Pijama Corazones",
+        "precio": "290",
+        "inventario": "1",
+        "descripcion": "Pijama Corazones.",
+        "colores": "Beige con rojo",
+        "tipo": "Blusas",
+        "tallas": "S-XXL"
+    },
+    {
+        "id": 67,
+        "nombre": "Pijama de tirantes",
+        "precio": "22",
+        "inventario": "1",
+        "descripcion": "Pijama de tirantes",
+        "colores": "Blanco/Rojo",
+        "tipo": "Blusas",
+        "tallas": "M-XXL"
+    },
+    {
+        "id": 68,
+        "nombre": "Short de Vestir",
+        "precio": "230",
+        "inventario": "1",
+        "descripcion": "Short de Vestir Negro",
+        "colores": "Negro",
+        "tipo": "Shorts",
+        "tallas": "S-L"
+    },
+    {
+        "id": 69,
+        "nombre": "Short Falda Mezclilla",
+        "precio": "300",
+        "inventario": "1",
+        "descripcion": "Short Falda Mezclilla",
+        "colores": "Mezclilla",
+        "tipo": "Shorts",
+        "tallas": "17-24"
+    },
+    {
+        "id": 70,
+        "nombre": "Short Falda Negro",
+        "precio": "250",
+        "inventario": "1",
+        "descripcion": "Short Falda Negro",
+        "colores": "Negro",
+        "tipo": "Shorts",
+        "tallas": "21"
+    }
+]
