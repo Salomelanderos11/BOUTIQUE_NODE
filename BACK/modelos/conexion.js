@@ -1,4 +1,4 @@
-import 'dotenv/config'; 
+import 'dotenv/config'
 import pg from 'pg';
 
 const { Pool } = pg;

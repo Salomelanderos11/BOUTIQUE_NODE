@@ -1,4 +1,4 @@
-import {pool} from './conexion'
+import {pool} from './conexion.js' 
 const db = pool;
 export class ModelProducto {
     static async getAll({categoria}) {
@@ -41,6 +41,22 @@ export class ModelProducto {
     }
 
     static async insert ({producto}){
-        const sql = 'call '
+        try {
+         
+        const sql = 'call insertar_producto($1,$2)'
+        console.log('primer')
+        const res = await db.query(sql,[producto,null])
+        console.log(res)
+        if(res.rows[0] != null){
+            const sqlselect = 'select * from productos where id = $1'
+            const resp = await db.query(sqlselect,[res.rows[0].p_producto_id])
+            console.log('segundo')
+            return resp.rows
+        }   
+        } catch (error) {
+            console.error('ocurrio un error ',error.message)
+            return error.message
+        }
+        
     }
 }

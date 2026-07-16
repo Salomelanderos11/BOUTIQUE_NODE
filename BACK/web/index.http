@@ -1,0 +1,12 @@
+POST http://localhost:1234/productos
+Content-Type: application/json
+
+{
+    "nombre": "Conjunto Formal",
+    "precio": 250,
+    "inventario": 2,
+    "descripcion": "Conjunto formal color negro, tela algodon.",
+    "colores": ["Negro", "Azul Rey"],
+    "categorias": ["Pantalones"],
+    "tallas": ["M"]
+}
