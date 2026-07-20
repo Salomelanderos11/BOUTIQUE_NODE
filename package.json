@@ -8,7 +8,7 @@
     "zod": "4.4.3"
   },
   "scripts": {
-    "dev": "nodemon ./back/server/server.js"
+    "dev": "nodemon ./back/server/app.js"
   },
   "type": "module"
 }

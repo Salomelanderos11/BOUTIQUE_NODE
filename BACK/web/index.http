@@ -10,3 +10,26 @@ Content-Type: application/json
     "categorias": ["Pantalones"],
     "tallas": ["M"]
 }
+
+###get
+
+GET http://localhost:1234/productos
+
+#### gatid
+
+GET http://localhost:1234/productos/6
+
+###update 
+
+PATCH http://localhost:1234/productos/6
+Content-Type: application/json
+
+{
+    
+    "precio": 300,
+    "inventario": 500,
+    "descripcion": "Conjunto formal"
+}
+
+###delete
+DELETE  http://localhost:1234/productos/1

@@ -8,7 +8,7 @@ const schemaProducto = z.object(
         precio: z.number({invad_type_eorr : 'el Precio debe ser un un numero.',
             required_error: ' el Precio es requerido'}).min(10),
         inventario: z.number({invad_type_eorr : 'el inventario debe ser un un numero.',
-            required_error: ' el inventario es requerido'}).min(1),
+            required_error: ' el inventario es requerido'}).min(0),
         descripcion: z.string(),
         colores: z.array(z.enum([
                                 "Negro",
