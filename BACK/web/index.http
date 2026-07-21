@@ -13,7 +13,7 @@ Content-Type: application/json
 
 ###get
 
-GET http://localhost:1234/productos
+GET http://localhost:1234/productos?categoria=Pantalones
 
 #### gatid
 
@@ -26,9 +26,12 @@ Content-Type: application/json
 
 {
     
-    "precio": 300,
+    "precio": 500,
     "inventario": 500,
-    "descripcion": "Conjunto formal"
+    "descripcion": "Conjunto formal color negro, tela algodon.",
+    "colores": ["Negro", "Azul Rey"],
+    "categorias": ["Pantalones"],
+    "tallas": ["M"]
 }
 
 ###delete

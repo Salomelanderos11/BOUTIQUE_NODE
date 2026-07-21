@@ -1,4 +1,5 @@
-select * from productos
+select * from categorias p 
+inner join categorias ca
 
 
 -- 1. Crear tablas maestras independientes
@@ -48,6 +49,42 @@ CREATE TABLE producto_color (
 
 
 
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+SELECT 
+    p.id,
+    p.nombre,
+    p.precio,
+    p.inventario,
+    p.descripcion,
+    -- Devuelve un arreglo JSON de strings: ["Electrónica", "Hogar"] o []
+    to_json(ARRAY(
+        SELECT c.nombre 
+        FROM categorias c
+        JOIN producto_categoria pc ON c.id = pc.categoria_id
+        WHERE pc.producto_id = p.id
+    )) AS categorias,
+    -- Devuelve un arreglo JSON de strings: ["S", "M"] o []
+    to_json(ARRAY(
+        SELECT t.nombre 
+        FROM tallas t
+        JOIN producto_talla pt ON t.id = pt.talla_id
+        WHERE pt.producto_id = p.id
+    )) AS tallas,
+    -- Devuelve un arreglo JSON de strings: ["Rojo", "Azul"] o []
+    to_json(ARRAY(
+        SELECT col.nombre 
+        FROM colores col
+        JOIN producto_color pcol ON col.id = pcol.color_id
+        WHERE pcol.producto_id = p.id
+    )) AS colores
+FROM productos p;
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
 
 CREATE OR REPLACE PROCEDURE insertar_producto(
     IN p_producto_datos JSONB,
@@ -71,7 +108,7 @@ BEGIN
     RETURNING id INTO p_producto_id;
 
     -- 2. Procesar e insertar categorías asociadas
-    FOR v_item IN SELECT jsonb_array_elements_text(p_producto_datos->'categoria') LOOP
+    FOR v_item IN SELECT jsonb_array_elements_text(p_producto_datos->'categorias') LOOP
         SELECT id INTO v_cat_id FROM categorias WHERE nombre = v_item;
         
         IF v_cat_id IS NOT NULL THEN
@@ -106,92 +143,5 @@ END;
 $$ LANGUAGE plpgsql;
 
 
-SELECT 
-    p.id,
-    p.nombre,
-    p.precio,
-    p.inventario,
-    p.descripcion,
-    -- Agrupamos las categorías en un arreglo de texto
-    COALESCE(json_agg(DISTINCT c.nombre) FILTER (WHERE c.nombre IS NOT NULL), '[]') AS categorias,
-    -- Agrupamos los colores en un arreglo de texto
-    COALESCE(json_agg(DISTINCT col.nombre) FILTER (WHERE col.nombre IS NOT NULL), '[]') AS colores,
-    -- Agrupamos las tallas en un arreglo de texto
-    COALESCE(json_agg(DISTINCT t.nombre) FILTER (WHERE t.nombre IS NOT NULL), '[]') AS tallas
-FROM productos p
--- Joins para Categorías
-LEFT JOIN producto_categoria pc ON p.id = pc.producto_id
-LEFT JOIN categorias c ON pc.categoria_id = c.id
--- Joins para Colores
-LEFT JOIN producto_color pcol ON p.id = pcol.producto_id
-LEFT JOIN colores col ON pcol.color_id = col.id
--- Joins para Tallas
-LEFT JOIN producto_talla pt ON p.id = pt.producto_id
-LEFT JOIN tallas t ON pt.talla_id = t.id
--- Agrupamos por el ID del producto para que no se dupliquen registros
-GROUP BY p.id;
 
-
-select * from colores
-
-
-INSERT INTO tallas (nombre) VALUES
-('XS'), ('S'), ('M'), ('L'), ('XL'), ('XXL'), 
-('Unitalla'), ('Oversize'),
-('5'), ('7'), ('9'), ('11'), ('13'), ('15'), ('17'), ('19'), ('21'), ('23'), ('24'),
-('26'), ('28'), ('30'), ('32'), ('34'), ('36'), ('38'), ('40')
-ON CONFLICT (nombre) DO NOTHING;
-
-INSERT INTO categorias (nombre) VALUES
-('Pantalones'),
-('Jeans'),
-('Joggers'),
-('Leggings'),
-('Shorts'),
-('Faldas'),
-('Blusas'),
-('Playeras'),
-('Camisas'),
-('Sacos'),
-('Suéteres'),
-('Sudaderas'),
-('Vestidos'),
-('Conjuntos'),
-('Lencería'),
-('Pijamas'),
-('Trajes de Baño')
-ON CONFLICT (nombre) DO NOTHING;
-
-
-INSERT INTO colores (nombre) VALUES
-('Negro'),
-('Blanco'),
-('Gris Oxford'),
-('Gris Jaspe'),
-('Beige'),
-('Hueso'),
-('Café'),
-('Azul Marino'),
-('Azul Rey'),
-('Azul Cielo'),
-('Rojo'),
-('Tinto'),
-('Rosa Pastel'),
-('Rosa Fucsia'),
-('Verde Militar'),
-('Verde Esmeralda'),
-('Verde Menta'),
-('Mostaza'),
-('Amarillo'),
-('Naranja'),
-('Lila'),
-('Morado'),
-('Coral'),
-('Turquesa'),
-('Mezclilla Claro'),
-('Mezclilla Medio'),
-('Mezclilla Oscuro'),
-('Plata'),
-('Oro'),
-('Multicolor')
-ON CONFLICT (nombre) DO NOTHING;
+select * from productos where id  = 6

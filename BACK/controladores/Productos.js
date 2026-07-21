@@ -36,11 +36,11 @@ export class controllerProducto {
 
                 const resultado = await this.ModelProducto.getAll({categoria})    
 
-            if(resultado.length ==0 ){
-                return res.status(404).json({mensaje:'No se encontraron productos'})
+            if(resultado.succes ==false ){
+                return res.status(404).json({mensaje:resultado.message})
             }
             else{
-                return res.status(200).json(resultado)
+                return res.status(200).json(resultado.productos)
             }
 
         } catch (error) {
@@ -65,12 +65,14 @@ export class controllerProducto {
             
             const id = req.params.id
             const objeto = req.body
+            
             const resultado = validarParcial(objeto)
-            console.log('objeto')
+            //console.log('objeto')
             if(resultado.error){
                 return res.status(400).json({error: JSON.parse(resultado.error.message)})
             }
-
+            
+            
             const respuesta  = await this.ModelProducto.update_parcial({id,producto:resultado.data})
             if(respuesta.succes == true) return res.status(200).json(respuesta.res)
            
